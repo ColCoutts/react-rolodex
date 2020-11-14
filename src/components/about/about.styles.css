@@ -3,3 +3,7 @@
   height: 60%;
   border: 5px solid lightgreen;
 }
+
+.collection-list {
+  display: flex;
+}
