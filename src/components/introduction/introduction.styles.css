@@ -6,17 +6,12 @@
   align-items: center;
 }
 
-.intro-image-container {
-  border: 2px solid lightgreen;
-}
-
 .intro-image {
-  height: 19rem;
+  height: 18rem;
 }
 
 .intro-text {
-  border: 2px solid lightpink;
-  width: 50%;
+  width: 52%;
   color: #3f3f3f;
   font-family: source-sans-pro, sans-serif;
   font-weight: 200;

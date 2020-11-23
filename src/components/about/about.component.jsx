@@ -8,7 +8,6 @@ import CollectionItem from './collection-item/collection-item.component';
 // good time to use React state hooks
 const About = () => (
   <div className='about'>
-      <p>about section this contains cards</p>
       <div className='collection-list'>
         {
           ABOUT_DATA.map( ( { id, ...otherAboutProps } ) => (

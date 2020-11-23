@@ -10,12 +10,9 @@ const Introduction = () => (
     </div>
     <div className='intro-text'>
     <p>
-    My name is Colin Coutts, <br />
-    I&apos;m a Software Developer <br />
-    passionate about telling <br />
-    user stories and collaborating <br /> 
-    with other coders to bring<br />
-    projects to life.
+    My name is Colin Coutts, I&apos;m a Software Developer<br />
+    passionate about telling user stories and collaborating <br />
+    with other coders to bring projects to life.<br />
     </p>
     </div>
   </div>
