@@ -19,6 +19,7 @@ class App extends Component
       <div className='App'>
         <Header />
         <Hero />
+        <div className='polygon'></div>
         <Introduction />
         <About />
         <Projects />
