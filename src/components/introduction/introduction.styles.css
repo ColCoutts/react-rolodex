@@ -1,4 +1,25 @@
 .introduction {
-  width: 100vw;
-  height: 30%;
+  width: 95vw;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-image-container {
+  border: 2px solid lightgreen;
+}
+
+.intro-image {
+  height: 19rem;
+}
+
+.intro-text {
+  border: 2px solid lightpink;
+  width: 50%;
+  color: #3f3f3f;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 200;
+  font-style: regular;
+  font-size: 2rem;
 }
