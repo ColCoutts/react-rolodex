@@ -21,22 +21,3 @@
   background-repeat: no-repeat;
   border: 3px solid yellow;
 }
-
-h2 {
-  margin-left: 4rem;
-  font-size: 3em;
-  margin-bottom: 4rem;
-}
-
-p {
-  margin-left: 4rem;
-  font-size: 1.5em;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  margin-left: 3.5rem;
-  font-size: 1.25em;
-  font-weight: 400;
-  padding: 0.5rem;
-}
