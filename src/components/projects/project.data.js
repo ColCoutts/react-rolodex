@@ -1,30 +1,31 @@
-// making data for the about card to be passed in as a prop
+import image from '../../../assets/portfolio-images/therunscard.jpg';
+import pushPinCard from '../../../assets/portfolio-images/pushpincardrevise.jpg';
+import campcard from '../../../assets/portfolio-images/campdremcardrevise.jpg';
 
 const PROJECT_DATA = [
   {
-    id: 1,
-    title: 'Camp Drems',
-    routeName: 'frontenddev',
-    imgURL: 'someURLheremaybe',
-    linkURL: 'linktosite',
-    description: 'description about camp drems'
+    name: 'PushPin',
+    tech: ['thing1', 'thing2'],
+    image: pushPinCard,
+    description: 'FullStack Dev. | UX/UI Design',
+    userName: 'username: student@student.com',
+    passWord: 'password: password!23',
+    links: ['https://github.com/push-pin/push-pin', 'https://pushpin.netlify.com/']
   },
   {
-    id: 2,
-    title: 'PushPin LMS',
-    routeName: 'frontenddev',
-    imgURL: 'someURLheremaybe',
-    linkURL: 'linktosite',
-    description: 'description about PushPin'
+    name: 'Camp Drem',
+    tech: ['thing1', 'thing2'],
+    image: campcard,
+    description: 'FullStack Dev. | UX/UI Design',
+    links: ['https://github.com/drem-big/camp-drems', 'https://optimistic-meitner-4b66fe.netlify.com/auth.html']
   },
   {
-    id: 3,
-    title: 'The Runs',
-    routeName: 'frontenddev',
-    imgURL: 'someURLheremaybe',
-    linkURL: 'linktosite',
-    description: 'description about The Runs'
-  },
+    name: 'The Runs',
+    tech: ['thing1', 'thing2'],
+    image: image,
+    description: 'Front End Dev. | UX/UI Design',
+    links: ['https://github.com/commitmentissuesacl/commitmentissuesacl.github.io', 'http://the-runs.com/']
+  }
 ];
 
 export default PROJECT_DATA;

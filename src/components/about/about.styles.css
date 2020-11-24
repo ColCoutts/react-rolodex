@@ -1,13 +1,15 @@
 .about {
-  width: 95vw;
-  height: 80vh;
+  width: 100vw;
+  height: 85vh;
   display: flex;
   justify-content: center;
+
+  border-bottom: 2px solid #dc4b4c;
 }
 
 .collection-list {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 95%;
   justify-content: space-between;
 }

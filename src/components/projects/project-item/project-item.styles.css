@@ -1,4 +1,42 @@
 .project-item {
-  border: 5px solid purple;
-  width: 25%;
+  /* border-top: 15px solid #dc4b4c; */
+  background-color: #f0efeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+  height: 30rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid green;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid yellow;
+}
+
+h2 {
+  margin-left: 4rem;
+  font-size: 3em;
+  margin-bottom: 4rem;
+}
+
+p {
+  margin-left: 4rem;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-left: 3.5rem;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 0.5rem;
 }
