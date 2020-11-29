@@ -4,7 +4,7 @@ import './introduction.styles.css';
 import introImage from '../../../assets/intro-image.svg';
 
 const Introduction = () => (
-  <div className='introduction'>
+  <div id='about' className='introduction'>
     <div className='intro-image-container'>
     <img src={introImage} alt='intro image' className='intro-image' />
     </div>
