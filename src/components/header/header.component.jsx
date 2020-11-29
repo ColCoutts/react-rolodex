@@ -6,7 +6,7 @@ const Header = () => (
     <div className='home'>
       <a href='#landing_page'>&#8493;</a>
     </div>
-    <nav className='nav menu'>
+    <nav className='nav-menu'>
       <a href='#about'>about</a>
       <a href='#work'>work</a>
       <a href='work'>say hi!</a>

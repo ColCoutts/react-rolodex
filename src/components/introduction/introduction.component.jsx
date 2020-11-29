@@ -14,7 +14,9 @@ const Introduction = () => (
     passionate about telling user stories and collaborating <br />
     with other coders to bring projects to life.<br />
     </p>
+    <a className='button intro-btn' href='https://drive.google.com/file/d/18hZWfHaefewVjet4h9YCE-wWVgWw7eQf/view?usp=sharing' target='blank'>CV</a>
     </div>
+ 
   </div>
 );
 

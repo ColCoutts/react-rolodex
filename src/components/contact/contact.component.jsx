@@ -3,7 +3,9 @@ import './contact.styles.css';
 
 const Contact = () => (
   <div className='contact'>
-    <p>smallish banner with a button that allows visitor to write me an email</p>
+    <h1 className='contact-header'>Interested in working on a project?</h1>
+    <p className='contact-sub-header'>let&apos;s start a conversation</p>
+    <a className='button' target="_top" href="mailto:your@email.address?subject=I've got a project!">Let&apos;s chat!</a>
   </div>
 );
 

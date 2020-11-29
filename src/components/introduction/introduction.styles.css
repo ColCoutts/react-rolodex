@@ -11,10 +11,19 @@
 }
 
 .intro-text {
-  width: 52%;
+  width: 45%;
+  height: 45%;
   color: #3f3f3f;
   font-family: source-sans-pro, sans-serif;
   font-weight: 700;
   font-style: regular;
   font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button.intro-btn {
+  align-self: flex-end;
 }
