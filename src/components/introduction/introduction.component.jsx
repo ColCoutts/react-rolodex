@@ -1,23 +1,20 @@
 import React from 'react';
-import './introduction.styles.css';
+import { StyledIntroduction, IntroImage, IntroText, CVButton } from './introduction.styled.jsx';
 
 import introImage from '../../../assets/intro-image.svg';
 
 const Introduction = () => (
-  <div id='about' className='introduction'>
-    <div className='intro-image-container'>
-    <img src={introImage} alt='intro image' className='intro-image' />
-    </div>
-    <div className='intro-text'>
+  <StyledIntroduction>
+    <IntroImage src={introImage} alt='intro image' className='intro-image' />
+    <IntroText>
     <p>
     My name is Colin Coutts, I&apos;m a Software Developer<br />
     passionate about telling user stories and collaborating <br />
     with other coders to bring projects to life.<br />
     </p>
-    <a className='button intro-btn' href='https://drive.google.com/file/d/18hZWfHaefewVjet4h9YCE-wWVgWw7eQf/view?usp=sharing' target='blank'>CV</a>
-    </div>
- 
-  </div>
+    <CVButton href='https://drive.google.com/file/d/18hZWfHaefewVjet4h9YCE-wWVgWw7eQf/view?usp=sharing' target='blank'>CV</CVButton>
+    </IntroText>
+  </StyledIntroduction>
 );
 
 export default Introduction;

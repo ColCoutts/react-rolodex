@@ -1,6 +1,4 @@
 import React from 'react';
-import './header.styles.css';
-
 import { StyledHeader, StyledHomeIcon, StyledNavMenu } from './header.styled.jsx';
 
 const Header = () => (
@@ -11,7 +9,7 @@ const Header = () => (
     <StyledNavMenu>
       <a href='#about'>about</a>
       <a href='#work'>work</a>
-       <a target="_top" href="mailto:couttstcolin@gmail.com?subject=project discovery">say hi!</a>
+      <a target="_top" href="mailto:couttstcolin@gmail.com?subject=project discovery">say hi!</a>
     </StyledNavMenu>
   </StyledHeader>
 );
