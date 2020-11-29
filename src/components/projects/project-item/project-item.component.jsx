@@ -36,7 +36,7 @@ ProjectItem.propTypes = {
   image: PropTypes.string,
   userName: PropTypes.string,
   passWord: PropTypes.string,
-  links: PropTypes.string,
+  links: PropTypes.array,
   description: PropTypes.string
 };
 
