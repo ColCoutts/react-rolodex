@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { StyledAbout, CollectionListContainer } from './about.styled.jsx';
+
 import './about.styles.css';
 
 import ABOUT_DATA from './about.data';
@@ -12,15 +14,15 @@ const About = () =>
   const [data, setData] = useState( ABOUT_DATA );
 
   return(
-    <div className='about'>
-    <div className='collection-list'>
+    <StyledAbout>
+    <CollectionListContainer>
     {
       data.map( ( { id, ...otherAboutProps } ) => (
         <CollectionItem key={id} {...otherAboutProps} />
         ))
       }
-      </div>
-      </div>
+      </CollectionListContainer>
+      </StyledAbout>
       );
       
     };

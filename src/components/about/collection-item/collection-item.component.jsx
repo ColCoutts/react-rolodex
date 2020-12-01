@@ -1,35 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import
+  {
+    StyledCollectionItem,
+    TitleContainer,
+    Title,
+    Description,
+    ContentContainer,
+    Heading,
+    InfoContainer,
+    ToolsContainer,
+    ToolsItem
+  } from './collection-item.styled';
+
 import './collection-item.styles.css';
 
 const CollectionItem = ({ title, info, tools, description, heading1, heading2}) => (
-  <div className='collection-item'>
-    <div className='title-container'>
-      <h1 className='title'>{title}</h1>
-      <p className='description'>{description}</p>
-    </div>
-    <div className='content-container'>
-    <h2 className='heading'>{heading1}</h2>
-    <div className='info'>
+  <StyledCollectionItem>
+    <TitleContainer>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+    </TitleContainer>
+    <ContentContainer>
+    <Heading>{heading1}</Heading>
+    <InfoContainer>
         {
       info.map( ( { id, info } ) => (
         <span key={id}>{ (id ? ', ' : '') + info}</span>
         ))
       }
-      </div>
-      <h2 className='heading'>{heading2}</h2>
-      <div className='tools-container'>
-      <div className='tools'>
+      </InfoContainer>
+      <Heading>{heading2}</Heading>
+      <ToolsContainer>
+      <ToolsItem>
       {
         tools.map( ( { id, tool } ) => (
           <p key={id}>{tool}</p>
           ))
         }
-        </div>
-        </div>
-      </div>
-  </div>
+        </ToolsItem>
+        </ToolsContainer>
+      </ContentContainer>
+  </StyledCollectionItem>
 );
 
 CollectionItem.propTypes = {
