@@ -10,6 +10,9 @@ import Projects from './components/projects/projects.component.jsx';
 import Contact from './components/contact/contact.component.jsx';
 import Footer from './components/footer/footer.component.jsx';
 
+import { StyledApp } from './App.styled.jsx';
+import { GlobalStyle } from '../GlobalStyle.jsx';
+
 import './App.css';
 
 class App extends Component
@@ -17,19 +20,22 @@ class App extends Component
   render()
   {
     return (
-      <div className='App'>
-        <Header />
-        <Hero />
-        <div className='polygon'></div>
-        <Introduction />
-        <About />
-        <div className='polygon-2'></div>
-        <ProjectHeading />
-        <Projects />
-        <Contact />
-        <Footer />
+      <div>
+      <GlobalStyle />
+      <StyledApp>
+      <Header />
+      <Hero />
+      <div className='polygon'></div>
+      <Introduction />
+      <About />
+      <div className='polygon-2'></div>
+      <ProjectHeading />
+      <Projects />
+      <Contact />
+      <Footer />
+      </StyledApp>
       </div>
-    );
+      );
   }
 }
 

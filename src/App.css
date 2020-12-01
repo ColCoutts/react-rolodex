@@ -1,24 +1,3 @@
-body {
-  font-family: 'Open Sans Condensed';
-  background: #f0efeb;
-}
-
-a {
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.App {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100vh;
-}
-
 .polygon {
   position: absolute;
   background-color: #fcfcfc;
