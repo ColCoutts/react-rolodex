@@ -2,6 +2,7 @@ const path = require( 'path' );
 const webpack = require( 'webpack' );
 
 const svgToMiniDataURI = require( 'mini-svg-data-uri' );
+const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 
 module.exports = {
   entry: './src/index.js',
@@ -46,8 +47,9 @@ module.exports = {
     }
   },
   output: {
-    path: path.resolve( __dirname, 'dist/' ),
-    publicPath: '/dist/',
+    // path: path.resolve( __dirname, 'dist/' ),
+    // publicPath: '/dist/',
+    path: path.resolve('./build'),
     filename: 'bundle.js'
   },
   devServer: {
@@ -56,5 +58,11 @@ module.exports = {
     publicPath: 'http://localhost:3000/dist/',
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin( {
+      inject: true,
+      template: path.resolve('./public/index.html')
+    })
+  ]
 };
